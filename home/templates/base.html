@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.0/js/jquery.tablesorter.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.0/css/theme.default.min.css">
+  <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+  </head>
+  <body style="background-color: #111111;">
+    <!-- Bootstrap Bundle with Popper -->
+    <!--loading-->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p style="color: rgb(188, 188, 188); text-align: center; font-size: 3vh;">Yuta Sato's Portfolio</p>
+    </div>
+    
+    <style>
+      .loading{
+        width: 100vw;
+        height: 100vh;
+        transition: all 1s;
+        background-color: #111111;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+      }
+      .spinner{
+        width: 100px;
+        height: 100px;
+        margin: 200px auto;
+        background-color: white;
+        border-radius: 100%;
+        animation: sk-scaleout 1.0s infinite ease-in-out;
+      }
+      @keyframes sk-scaleout {
+        0% {
+          transform: scale(0);
+        } 100% {
+          transform: scale(1.0);
+          opacity: 0;
+        }
+      }
+      .loaded {
+        opacity: 0;
+        visibility: hidden;
+      }
+    </style>
+    <script>
+      window.onload = function() {
+        sleep(2000)
+        const spinner = document.getElementById('loading');
+        spinner.classList.add('loaded');
+      }
+      function sleep(waitMsec) {
+        var startMsec = new Date();
+        while (new Date() - startMsec < waitMsec);
+      }
+    </script>
+
+    <!-- main base content -->
+    <div class="main_contents">
+      <div class="tab" style="display: flex;">
+        <a href="/home/" class="cbtn1">
+          <img src="/media/home_icon.png" style="width: 40%;">
+        </a>
+        <div class="content_list" style=" display: flex; margin: 0 0 0 auto; padding-right: 4vh;">
+          <a href="/contact/" class="cbtn2"></a>
+          <a href="/contact/" style="text-decoration: none; color: whitesmoke; margin: auto; padding-left: 1vh; font-size: 3vh;">contact us</a>
+        </div>
+      </div>
+      <style>
+        .cbtn1{
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10vh;
+            height: 10vh;
+            background: #6fa1ff;
+            color: #FFF;
+            text-decoration: none;
+            text-align: center;
+            margin: 4vh 4vh;
+        }
+        .cbtn2{
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 4vh;
+            height: 4vh;
+            background: whitesmoke;
+            color: #FFF;
+            text-decoration: none;
+            text-align: center;
+            margin: auto;
+        }
+        </style>
+      {% block content %}
+      {% endblock %}
+      <!--footer-->
+      <div class="footer" style="background-color: black; height: 20vh;">
+        <p style="color: whitesmoke; text-align: center; padding-top: 10vh;">© 2024 yutasato</p>
+      </div>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>

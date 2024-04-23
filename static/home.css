@@ -1,0 +1,82 @@
+.cover{
+    width: 100%;
+    height: 82vh;
+}
+.home_title{
+    color: whitesmoke;
+    font-size: 20vh; 
+    text-align: center; 
+    padding-top: 10vh;
+}
+.home_name{
+    color: rgb(188, 188, 188); 
+    font-size: 6vh; 
+    text-align: center; 
+    padding-top: 1vh;
+}
+.univ_name{
+    color: rgb(188, 188, 188); 
+    font-size: 4vh; 
+    text-align: center; 
+    padding-top: 1vh;
+}
+.class_name{
+    color: rgb(188, 188, 188); 
+    font-size: 3vh; 
+    text-align: center; 
+    padding-top: 1vh;
+}
+
+/*共通*/
+.Link{
+    text-decoration: none;
+}
+
+/*来歴*/
+.history{
+    display: flex; 
+    justify-content: center;
+}
+.his_p{
+    color: whitesmoke; 
+    font-size: 5vw; 
+    padding-right: 6vw; 
+    padding-top: 10vh;
+}
+.his_img{
+    width: 40vw;
+}
+
+/*経験*/
+.experience{
+    display: flex; 
+    justify-content: center; 
+    padding-top: 26vh;
+    padding-bottom: 26vh;
+}
+.exp_img{
+    width: 40vw;
+}
+.exp_p{
+    color: whitesmoke; 
+    font-size: 5vw; 
+    padding-left: 6vw; 
+    padding-top: 10vh;
+}
+
+/*作品*/
+.work{
+    display: flex; 
+    justify-content: center; 
+    padding-bottom: 26vh;
+}
+.work_p{
+    color: whitesmoke;
+    font-size: 5vw;
+    padding-right: 6vw; 
+    padding-top: 10vh;
+}
+.work_img{
+    width: 40vw;
+}
+

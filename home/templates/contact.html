@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<title>Contact Us</title>
+<link rel="stylesheet" href="{% static 'contact.css' %}">
+<div class="contact_main">
+    <p class="p_name">Yuta Sato</p>
+    <a class="outLink" href="https://github.com/yutasato1112">
+        <img class="service_icon" src="https://img.icons8.com/ios/50/22C3E6/github--v1.png" alt="github--v1"/>
+        <p class="service_name"> Github : </p>
+        <p class="account_name">yutasato1112</p>
+    </a>
+    <a class="outLink" href="https://twitter.com/sy_cr_z">
+        <img class="service_icon" src="https://img.icons8.com/ios/50/22C3E6/x.png" alt="x"/>
+        <p class="service_name"> X(Twitter) : </p>
+        <p class="account_name">@sy_cr_z</p>
+    </a>
+    <a class="outLink">
+        <img class="service_icon" src="https://img.icons8.com/ios/100/22C3E6/new-post--v1.png" alt="new-post--v1"/>
+        <p class="service_name"> Email : </p>
+        <p class="account_name">sy17082[at]gmail.com</p>
+    </a>
+</div>
+{% endblock %}

@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<title>Experience</title>
+<link rel="stylesheet" href="{% static 'experience.css' %}">
+<div class="exp_main">
+    <p class="p_title">Experience</p>
+</div>
+<div class="blank_area"></div>
+<div class="intern">
+    <p class="in_title">インターン</p>
+    <div class="case">
+        <p class="case_title">音声入力に対応した飲食店向けPOSシステムの開発</p>
+        <p class="case_explain">音声入力での注文・棚卸に対応したPOSシステム。注文・会計・棚卸はAndroidアプリ、在庫管理やスタッフ管理等はWebシステムとして実装。</p>
+        <p class="c_e_title">使用技術</p>
+        <div class="case_eng">
+            <div class="flex_left">
+                <div class="flex_content">
+                    <img src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1"/>
+                    <p class="c_e_name">Python</p>
+                </div>
+                <div class="flex_content">
+                    <img src="https://img.icons8.com/external-those-icons-flat-those-icons/24/external-MySQL-programming-and-development-those-icons-flat-those-icons.png" alt="external-MySQL-programming-and-development-those-icons-flat-those-icons"/>
+                    <p class="c_e_name">MySQL</p>
+                </div>
+                <div class="flex_content">
+                    <img width="48" height="48" src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/228BE6/external-react-social-media-tanah-basah-glyph-tanah-basah.png" alt="external-react-social-media-tanah-basah-glyph-tanah-basah"/>
+                    <p class="c_e_name">React</p>
+                </div>
+                <div class="flex_content">
+                    <img src="https://img.icons8.com/color/48/kotlin.png" alt="kotlin"/>
+                    <p class="c_e_name">Kotlin</p>
+                </div>
+            </div>
+            <div class="flex_right">
+                <div class="flex_content">
+                    <img src="https://img.icons8.com/ios/50/FD7E14/lambda.png" alt="lambda"/>
+                    <p class="c_e_name">AWS Lambda</p>
+                </div>
+                <div class="flex_content">
+                    <img class="aws" src="/media/api_gateway.svg" alt="api Gateway">
+                    <p class="c_e_name">AWS API Gateway</p>
+                </div>
+                <div class="flex_content">
+                    <img class="aws" src="/media/rds.svg" alt="rds">
+                    <p class="c_e_name">AWS RDS</p>
+                </div>
+                <div class="flex_content">
+                    <img class="aws" src="/media/ec2.svg" alt="ec2">
+                    <p class="c_e_name">AWS EC2</p>
+                </div>
+            </div>
+        </div>
+        <div class="my_work">
+            <p class="c_w_title">担当箇所</p>
+            <div class="dev_me">
+                <div class="dev_left">
+                    <p class="c_w_name">画面設計</p>
+                    <p class="c_w_name">データベース設計</p>
+                    <p class="c_w_name">音声解析開発</p>
+                </div>
+                <div class="dev_right">
+                    <p class="c_w_name">各種API開発</p>
+                    <p class="c_w_name">Webシステム開発</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="case">
+        <p class="case_title">Instagram解析システム</p>
+        <p class="case_explain">Instagramのインサイト解析や予約投稿、自動いいねやフォロー機能を備えたWebシステム。</p>
+        <p class="c_e_title">使用技術</p>
+        <div class="case_eng">
+            <div class="flex_left">
+                <div class="flex_content">
+                    <img src="https://img.icons8.com/material-outlined/24/FFFFFF/django.png" alt="django"/>
+                    <p class="c_e_name">Django</p>
+                </div>
+            </div>
+            <div class="flex_right">
+                <div class="flex_content">
+                    <img src="/media/mariadb.png" alt="mariaDB">
+                    <p class="c_e_name">MariaDB</p>
+                </div>
+            </div>
+        </div>
+        <p class="c_w_title">担当箇所</p>
+        <div class="my_work">
+            <div class="dev_me">
+                <div class="dev_left">
+                    <p class="c_w_name">画面設計</p>
+                    <p class="c_w_name">データベース設計</p>
+                    <p class="c_w_name">予約投稿開発</p>
+                </div>
+                <div class="dev_right">
+                    <p class="c_w_name">自動いいね・フォロー開発</p>
+                    <p class="c_w_name">月別レポート作成機能の開発</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="case">
+        <p class="case_title">Facebook広告・Google広告・Instagram広告解析システム</p>
+        <p class="case_explain">Facebook広告やGoogle広告、Instagram広告のインサイト解析を行い、レポートを発行するシステム。</p>
+        <p class="c_e_title">使用技術</p>
+        <div class="case_eng">
+            <div class="flex_content">
+                <img class="looker" src="/media/looker.png" alt="looker studio">
+                <p class="c_e_name">Looker Studio</p>
+            </div>
+        </div>
+        <p class="c_w_title">担当箇所</p>
+        <div class="my_work">
+            <div class="dev_me">
+                <div class="dev_left">
+                    <p class="c_w_name">画面設計</p>
+                    <p class="c_w_name">Facebook広告部分開発</p>
+                </div>
+                <div class="dev_right">
+                    <p class="c_w_name">Google広告部分開発</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="case">
+        <p class="case_title">薬局向けPOSシステムの開発</p>
+        <p class="case_explain">薬局向けのPOSシステムをスマートフォンで実行できるように移植するプロジェクト。</p>
+        <p class="c_e_title">使用技術</p>
+        <div class="case_eng">
+            <div class="flex_content">
+                <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/external-kotlin-a-cross-platform-statically-typed-general-purpose-programming-language-with-type-inference-logo-shadow-tal-revivo.png" alt="external-kotlin-a-cross-platform-statically-typed-general-purpose-programming-language-with-type-inference-logo-shadow-tal-revivo"/>
+                <p class="c_e_name">Kotlin</p>
+            </div>
+        </div>
+        <p class="c_w_title">担当箇所</p>
+        <div class="my_work">
+            <div class="dev_me">
+                <p class="c_w_name">画面設計</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="study">
+
+</div>
+{% endblock %}

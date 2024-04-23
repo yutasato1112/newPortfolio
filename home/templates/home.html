@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<title>Yuta's Portfolio</title>
+<link rel="stylesheet" href="{% static 'home.css' %}">
+<div class="main">
+    <div class="cover">
+        <p class="home_title">Portfolio</p>
+        <p class="home_name">Yuta Sato</p>
+        <p class="univ_name">University of Tsukuba</p>
+        <p class="class_name">Graduate School of Science and Technology</p>        
+    </div>
+</div>
+
+<!--来歴-->
+<a class="Link" href="/history/">
+    <div class="history">
+        <p class="his_p">History</p>
+        <img class="his_img" src="/media/history.jpg" alt="history">
+    </div>
+</a>
+<!--経験-->
+<a class="Link" href="/experience/">
+    <div class="experience">
+        <img class="exp_img" src="/media/experience.jpg" alt="experience">
+        <p class="exp_p">Experience</p>
+    </div>
+</a>
+<!--作品-->
+<a class="Link" href="/work/">
+    <div class="work">
+        <p class="work_p">Work</p>
+        <img class="work_img" src="/media/work.jpg" alt="work">
+    </div>
+</a>
+
+{% endblock %}

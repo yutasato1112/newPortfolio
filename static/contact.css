@@ -1,0 +1,30 @@
+.contact_main{
+    height: 82vh;
+}
+.p_name{
+    color: whitesmoke;
+    font-size: 8vh;
+    text-align: center;
+    padding-top: 6vh;
+}
+.outLink{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+}
+.service_icon{
+    height: 10vh;
+}
+.service_name{
+    color: whitesmoke;
+    font-size: 4vh;
+    padding-top: 1vh;
+    padding-left: 2vw;
+}
+.account_name{
+    color: whitesmoke;
+    font-size: 4vh;
+    padding-top: 1vh;
+    padding-left: 1vw;
+}

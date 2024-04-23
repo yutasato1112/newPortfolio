@@ -1,0 +1,90 @@
+.history_main{
+    height: 100%;
+}
+.p_title{
+    color: whitesmoke;
+    font-size: 8vh;
+    text-align: center;
+    padding-top: 6vh;
+}
+.blank_area{
+    height: 10vh;
+}
+.intern{
+    width: 80%;
+    margin: auto;
+}
+.in_title{
+    color: whitesmoke;
+    font-size: 6vh;
+    text-align: center;
+}
+.case{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: whitesmoke;
+    background: #111111;
+    border: solid 3px whitesmoke;
+    border-radius: 10px;
+}
+.case_title{
+    text-align: center;
+    font-size: 4vh;
+    font-weight: bold;
+    padding-top: 5vh;
+}
+.case_explain{
+    text-align: center;
+    font-size: 2.4vh;
+    padding-top: 3vh;
+}
+.c_e_title{
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+}
+.case_eng{
+    display: flex;
+    justify-content: center;
+}
+.flex_left{
+    width: 30%;
+}
+.flex_content{
+    display: flex;
+}
+.flex_content img{
+    width: 3vw;
+}
+.c_e_name{
+    font-size: 3vh;
+    padding-left: 3vw;
+}
+.aws{
+    height: 2.8vw;
+}
+.c_w_title{
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+    padding-top: 3vh;
+}
+.my_work{
+    padding-top: 5vh;
+}
+.dev_me{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3vh;
+}
+.c_w_name{
+    color: whitesmoke;
+    font-size: 2.5vh;
+}
+.dev_left{
+    width: 30%;
+}
+.looker{
+    width: 3vw;
+    height: 3vw;
+}
